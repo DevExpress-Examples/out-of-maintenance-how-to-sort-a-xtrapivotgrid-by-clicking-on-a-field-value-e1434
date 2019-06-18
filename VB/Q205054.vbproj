@@ -48,9 +48,6 @@
       <Private>True</Private>
       <HintPath>d:\Projects\Test_Examples\TestFolder\Assemblies\Dlls\9.3.0\DevExpress.XtraPivotGrid.v9.3.Core.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework, Version=2.4.7.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
-      <SpecificVersion>True</SpecificVersion>
-      <HintPath>C:\Nunit\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
