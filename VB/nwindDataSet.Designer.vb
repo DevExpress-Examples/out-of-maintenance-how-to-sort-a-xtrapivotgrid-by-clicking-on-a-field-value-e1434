@@ -8,19 +8,21 @@
 ' </auto-generated>
 '------------------------------------------------------------------------------
 
-'INSTANT VB TODO TASK: There is no equivalent to #pragma directives in VB.NET:
-'#pragma warning disable 1591
+#Disable Warning BC1591
 
-
-Imports Microsoft.VisualBasic
-Imports System
 Namespace Q205054
 
 
 	''' <summary>
 	'''Represents a strongly typed in-memory cache of data.
 	'''</summary>
-	<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), Global.System.Serializable(), Global.System.ComponentModel.DesignerCategoryAttribute("code"), Global.System.ComponentModel.ToolboxItem(True), Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema"), Global.System.Xml.Serialization.XmlRootAttribute("nwindDataSet"), Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")> _
+	<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")>
+	<Global.System.Serializable()>
+	<Global.System.ComponentModel.DesignerCategoryAttribute("code")>
+	<Global.System.ComponentModel.ToolboxItem(True)>
+	<Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")>
+	<Global.System.Xml.Serialization.XmlRootAttribute("nwindDataSet")>
+	<Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")>
 	Partial Public Class nwindDataSet
 		Inherits System.Data.DataSet
 
@@ -28,7 +30,7 @@ Namespace Q205054
 
 		Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Public Sub New()
 			Me.BeginInit()
 			Me.InitClass()
@@ -38,7 +40,7 @@ Namespace Q205054
 			Me.EndInit()
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
 			MyBase.New(info, context, False)
 			If (Me.IsBinarySerialized(info, context) = True) Then
@@ -72,14 +74,18 @@ Namespace Q205054
 			AddHandler Me.Relations.CollectionChanged, schemaChangedHandler
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.Browsable(False), Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.Browsable(False)>
+		<Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>
 		Public ReadOnly Property ProductReports() As ProductReportsDataTable
 			Get
 				Return Me.tableProductReports
 			End Get
 		End Property
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.BrowsableAttribute(True), Global.System.ComponentModel.DesignerSerializationVisibilityAttribute(Global.System.ComponentModel.DesignerSerializationVisibility.Visible)> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.BrowsableAttribute(True)>
+		<Global.System.ComponentModel.DesignerSerializationVisibilityAttribute(Global.System.ComponentModel.DesignerSerializationVisibility.Visible)>
 		Public Overrides Property SchemaSerializationMode() As Global.System.Data.SchemaSerializationMode
 			Get
 				Return Me._schemaSerializationMode
@@ -89,28 +95,30 @@ Namespace Q205054
 			End Set
 		End Property
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.DesignerSerializationVisibilityAttribute(Global.System.ComponentModel.DesignerSerializationVisibility.Hidden)> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.DesignerSerializationVisibilityAttribute(Global.System.ComponentModel.DesignerSerializationVisibility.Hidden)>
 		Public Shadows ReadOnly Property Tables() As Global.System.Data.DataTableCollection
 			Get
 				Return MyBase.Tables
 			End Get
 		End Property
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.DesignerSerializationVisibilityAttribute(Global.System.ComponentModel.DesignerSerializationVisibility.Hidden)> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.DesignerSerializationVisibilityAttribute(Global.System.ComponentModel.DesignerSerializationVisibility.Hidden)>
 		Public Shadows ReadOnly Property Relations() As Global.System.Data.DataRelationCollection
 			Get
 				Return MyBase.Relations
 			End Get
 		End Property
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Protected Overrides Sub InitializeDerivedDataSet()
 			Me.BeginInit()
 			Me.InitClass()
 			Me.EndInit()
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Public Overrides Function Clone() As Global.System.Data.DataSet
 			Dim cln As nwindDataSet = (CType(MyBase.Clone(), nwindDataSet))
 			cln.InitVars()
@@ -118,17 +126,17 @@ Namespace Q205054
 			Return cln
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Protected Overrides Function ShouldSerializeTables() As Boolean
 			Return False
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Protected Overrides Function ShouldSerializeRelations() As Boolean
 			Return False
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Protected Overrides Sub ReadXmlSerializable(ByVal reader As Global.System.Xml.XmlReader)
 			If (Me.DetermineSchemaSerializationMode(reader) = Global.System.Data.SchemaSerializationMode.IncludeSchema) Then
 				Me.Reset()
@@ -151,7 +159,7 @@ Namespace Q205054
 			End If
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Protected Overrides Function GetSchemaSerializable() As Global.System.Xml.Schema.XmlSchema
 			Dim stream As New Global.System.IO.MemoryStream()
 			Me.WriteXmlSchema(New Global.System.Xml.XmlTextWriter(stream, Nothing))
@@ -159,12 +167,12 @@ Namespace Q205054
 			Return Global.System.Xml.Schema.XmlSchema.Read(New Global.System.Xml.XmlTextReader(stream), Nothing)
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Friend Sub InitVars()
 			Me.InitVars(True)
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Friend Sub InitVars(ByVal initTable As Boolean)
 			Me.tableProductReports = (CType(MyBase.Tables("ProductReports"), ProductReportsDataTable))
 			If (initTable = True) Then
@@ -174,7 +182,7 @@ Namespace Q205054
 			End If
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Private Sub InitClass()
 			Me.DataSetName = "nwindDataSet"
 			Me.Prefix = ""
@@ -185,19 +193,19 @@ Namespace Q205054
 			MyBase.Tables.Add(Me.tableProductReports)
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Private Function ShouldSerializeProductReports() As Boolean
 			Return False
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Private Sub SchemaChanged(ByVal sender As Object, ByVal e As Global.System.ComponentModel.CollectionChangeEventArgs)
 			If (e.Action = Global.System.ComponentModel.CollectionChangeAction.Remove) Then
 				Me.InitVars()
 			End If
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Public Shared Function GetTypedDataSetSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
 			Dim ds As New nwindDataSet()
 			Dim type As New Global.System.Xml.Schema.XmlSchemaComplexType()
@@ -247,7 +255,9 @@ Namespace Q205054
 		''' <summary>
 		'''Represents the strongly named DataTable class.
 		'''</summary>
-		<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), Global.System.Serializable(), Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")> _
+		<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")>
+		<Global.System.Serializable()>
+		<Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>
 		Partial Public Class ProductReportsDataTable
 			Inherits System.Data.DataTable
 			Implements System.Collections.IEnumerable
@@ -260,7 +270,7 @@ Namespace Q205054
 
 			Private columnShippedDate As Global.System.Data.DataColumn
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub New()
 				Me.TableName = "ProductReports"
 				Me.BeginInit()
@@ -268,7 +278,7 @@ Namespace Q205054
 				Me.EndInit()
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Friend Sub New(ByVal table As Global.System.Data.DataTable)
 				Me.TableName = table.TableName
 				If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
@@ -284,48 +294,49 @@ Namespace Q205054
 				Me.MinimumCapacity = table.MinimumCapacity
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
 				MyBase.New(info, context)
 				Me.InitVars()
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property CategoryNameColumn() As Global.System.Data.DataColumn
 				Get
 					Return Me.columnCategoryName
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property ProductNameColumn() As Global.System.Data.DataColumn
 				Get
 					Return Me.columnProductName
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property ProductSalesColumn() As Global.System.Data.DataColumn
 				Get
 					Return Me.columnProductSales
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property ShippedDateColumn() As Global.System.Data.DataColumn
 				Get
 					Return Me.columnShippedDate
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.Browsable(False)> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+			<Global.System.ComponentModel.Browsable(False)>
 			Public ReadOnly Property Count() As Integer
 				Get
 					Return Me.Rows.Count
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Default Public ReadOnly Property Item(ByVal index As Integer) As ProductReportsRow
 				Get
 					Return (CType(Me.Rows(index), ProductReportsRow))
@@ -340,13 +351,13 @@ Namespace Q205054
 
 			Public Event ProductReportsRowDeleted As ProductReportsRowChangeEventHandler
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub AddProductReportsRow(ByVal row As ProductReportsRow)
 				Me.Rows.Add(row)
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
-			Public Function AddProductReportsRow(ByVal CategoryName As String, ByVal ProductName As String, ByVal ProductSales As Decimal, ByVal ShippedDate As System.DateTime) As ProductReportsRow
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+			Public Function AddProductReportsRow(ByVal CategoryName As String, ByVal ProductName As String, ByVal ProductSales As Decimal, ByVal ShippedDate As DateTime) As ProductReportsRow
 				Dim rowProductReportsRow As ProductReportsRow = (CType(Me.NewRow(), ProductReportsRow))
 				Dim columnValuesArray() As Object = { CategoryName, ProductName, ProductSales, ShippedDate}
 				rowProductReportsRow.ItemArray = columnValuesArray
@@ -354,24 +365,24 @@ Namespace Q205054
 				Return rowProductReportsRow
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Overridable Function GetEnumerator() As Global.System.Collections.IEnumerator Implements System.Collections.IEnumerable.GetEnumerator
 				Return Me.Rows.GetEnumerator()
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Overrides Function Clone() As Global.System.Data.DataTable
 				Dim cln As ProductReportsDataTable = (CType(MyBase.Clone(), ProductReportsDataTable))
 				cln.InitVars()
 				Return cln
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
 				Return New ProductReportsDataTable()
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Friend Sub InitVars()
 				Me.columnCategoryName = MyBase.Columns("CategoryName")
 				Me.columnProductName = MyBase.Columns("ProductName")
@@ -379,7 +390,7 @@ Namespace Q205054
 				Me.columnShippedDate = MyBase.Columns("ShippedDate")
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Private Sub InitClass()
 				Me.columnCategoryName = New Global.System.Data.DataColumn("CategoryName", GetType(String), Nothing, Global.System.Data.MappingType.Element)
 				MyBase.Columns.Add(Me.columnCategoryName)
@@ -394,59 +405,51 @@ Namespace Q205054
 				Me.columnProductSales.ReadOnly = True
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function NewProductReportsRow() As ProductReportsRow
 				Return (CType(Me.NewRow(), ProductReportsRow))
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
 				Return New ProductReportsRow(builder)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Protected Overrides Function GetRowType() As Global.System.Type
 				Return GetType(ProductReportsRow)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
 				MyBase.OnRowChanged(e)
-				If (Me.ProductReportsRowChangedEvent IsNot Nothing) Then
-					RaiseEvent ProductReportsRowChanged(Me, New ProductReportsRowChangeEvent((CType(e.Row, ProductReportsRow)), e.Action))
-				End If
+				RaiseEvent ProductReportsRowChanged(Me, New ProductReportsRowChangeEvent((CType(e.Row, ProductReportsRow)), e.Action))
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
 				MyBase.OnRowChanging(e)
-				If (Me.ProductReportsRowChangingEvent IsNot Nothing) Then
-					RaiseEvent ProductReportsRowChanging(Me, New ProductReportsRowChangeEvent((CType(e.Row, ProductReportsRow)), e.Action))
-				End If
+				RaiseEvent ProductReportsRowChanging(Me, New ProductReportsRowChangeEvent((CType(e.Row, ProductReportsRow)), e.Action))
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
 				MyBase.OnRowDeleted(e)
-				If (Me.ProductReportsRowDeletedEvent IsNot Nothing) Then
-					RaiseEvent ProductReportsRowDeleted(Me, New ProductReportsRowChangeEvent((CType(e.Row, ProductReportsRow)), e.Action))
-				End If
+				RaiseEvent ProductReportsRowDeleted(Me, New ProductReportsRowChangeEvent((CType(e.Row, ProductReportsRow)), e.Action))
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
 				MyBase.OnRowDeleting(e)
-				If (Me.ProductReportsRowDeletingEvent IsNot Nothing) Then
-					RaiseEvent ProductReportsRowDeleting(Me, New ProductReportsRowChangeEvent((CType(e.Row, ProductReportsRow)), e.Action))
-				End If
+				RaiseEvent ProductReportsRowDeleting(Me, New ProductReportsRowChangeEvent((CType(e.Row, ProductReportsRow)), e.Action))
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub RemoveProductReportsRow(ByVal row As ProductReportsRow)
 				Me.Rows.Remove(row)
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
 				Dim type As New Global.System.Xml.Schema.XmlSchemaComplexType()
 				Dim sequence As New Global.System.Xml.Schema.XmlSchemaSequence()
@@ -511,19 +514,19 @@ Namespace Q205054
 		''' <summary>
 		'''Represents strongly named DataRow class.
 		'''</summary>
-		<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")> _
+		<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")>
 		Partial Public Class ProductReportsRow
 			Inherits System.Data.DataRow
 
 			Private tableProductReports As ProductReportsDataTable
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
 				MyBase.New(rb)
 				Me.tableProductReports = (CType(Me.Table, ProductReportsDataTable))
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Property CategoryName() As String
 				Get
 					Try
@@ -537,7 +540,7 @@ Namespace Q205054
 				End Set
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Property ProductName() As String
 				Get
 					Try
@@ -551,7 +554,7 @@ Namespace Q205054
 				End Set
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Property ProductSales() As Decimal
 				Get
 					Try
@@ -565,8 +568,8 @@ Namespace Q205054
 				End Set
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
-			Public Property ShippedDate() As System.DateTime
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+			Public Property ShippedDate() As DateTime
 				Get
 					Try
 						Return (CDate(Me(Me.tableProductReports.ShippedDateColumn)))
@@ -574,47 +577,47 @@ Namespace Q205054
 						Throw New Global.System.Data.StrongTypingException("The value for column 'ShippedDate' in table 'ProductReports' is DBNull.", e)
 					End Try
 				End Get
-				Set(ByVal value As System.DateTime)
+				Set(ByVal value As DateTime)
 					Me(Me.tableProductReports.ShippedDateColumn) = value
 				End Set
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function IsCategoryNameNull() As Boolean
 				Return Me.IsNull(Me.tableProductReports.CategoryNameColumn)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub SetCategoryNameNull()
 				Me(Me.tableProductReports.CategoryNameColumn) = Global.System.Convert.DBNull
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function IsProductNameNull() As Boolean
 				Return Me.IsNull(Me.tableProductReports.ProductNameColumn)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub SetProductNameNull()
 				Me(Me.tableProductReports.ProductNameColumn) = Global.System.Convert.DBNull
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function IsProductSalesNull() As Boolean
 				Return Me.IsNull(Me.tableProductReports.ProductSalesColumn)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub SetProductSalesNull()
 				Me(Me.tableProductReports.ProductSalesColumn) = Global.System.Convert.DBNull
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Function IsShippedDateNull() As Boolean
 				Return Me.IsNull(Me.tableProductReports.ShippedDateColumn)
 			End Function
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public Sub SetShippedDateNull()
 				Me(Me.tableProductReports.ShippedDateColumn) = Global.System.Convert.DBNull
 			End Sub
@@ -623,7 +626,7 @@ Namespace Q205054
 		''' <summary>
 		'''Row event argument class
 		'''</summary>
-		<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")> _
+		<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")>
 		Public Class ProductReportsRowChangeEvent
 			Inherits System.EventArgs
 
@@ -631,20 +634,22 @@ Namespace Q205054
 
 			Private eventAction As Global.System.Data.DataRowAction
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
-			Public Sub New(ByVal row As ProductReportsRow, ByVal action As Global.System.Data.DataRowAction)
-				Me.eventRow = row
-				Me.eventAction = action
+'INSTANT VB NOTE: The variable row was renamed since Visual Basic does not handle local variables named the same as class members well:
+'INSTANT VB NOTE: The variable action was renamed since Visual Basic does not handle local variables named the same as class members well:
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+			Public Sub New(ByVal row_Renamed As ProductReportsRow, ByVal action_Renamed As Global.System.Data.DataRowAction)
+				Me.eventRow = row_Renamed
+				Me.eventAction = action_Renamed
 			End Sub
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property Row() As ProductReportsRow
 				Get
 					Return Me.eventRow
 				End Get
 			End Property
 
-			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+			<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 			Public ReadOnly Property Action() As Global.System.Data.DataRowAction
 				Get
 					Return Me.eventAction
@@ -659,7 +664,12 @@ Namespace Q205054.nwindDataSetTableAdapters
 	''' <summary>
 	'''Represents the connection and commands used to retrieve and save data.
 	'''</summary>
-	<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), Global.System.ComponentModel.DesignerCategoryAttribute("code"), Global.System.ComponentModel.ToolboxItem(True), Global.System.ComponentModel.DataObjectAttribute(True), Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+	<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")>
+	<Global.System.ComponentModel.DesignerCategoryAttribute("code")>
+	<Global.System.ComponentModel.ToolboxItem(True)>
+	<Global.System.ComponentModel.DataObjectAttribute(True)>
+	<Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")>
+	<Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>
 	Partial Public Class ProductReportsTableAdapter
 		Inherits System.ComponentModel.Component
 
@@ -671,12 +681,12 @@ Namespace Q205054.nwindDataSetTableAdapters
 
 		Private _clearBeforeFill As Boolean
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Public Sub New()
 			Me.ClearBeforeFill = True
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Private ReadOnly Property Adapter() As Global.System.Data.OleDb.OleDbDataAdapter
 			Get
 				If (Me._adapter Is Nothing) Then
@@ -686,7 +696,7 @@ Namespace Q205054.nwindDataSetTableAdapters
 			End Get
 		End Property
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Friend Property Connection() As Global.System.Data.OleDb.OleDbConnection
 			Get
 				If (Me._connection Is Nothing) Then
@@ -715,7 +725,7 @@ Namespace Q205054.nwindDataSetTableAdapters
 			End Set
 		End Property
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Protected ReadOnly Property CommandCollection() As Global.System.Data.OleDb.OleDbCommand()
 			Get
 				If (Me._commandCollection Is Nothing) Then
@@ -725,7 +735,7 @@ Namespace Q205054.nwindDataSetTableAdapters
 			End Get
 		End Property
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Public Property ClearBeforeFill() As Boolean
 			Get
 				Return Me._clearBeforeFill
@@ -735,7 +745,7 @@ Namespace Q205054.nwindDataSetTableAdapters
 			End Set
 		End Property
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Private Sub InitAdapter()
 			Me._adapter = New Global.System.Data.OleDb.OleDbDataAdapter()
 			Dim tableMapping As New Global.System.Data.Common.DataTableMapping()
@@ -748,13 +758,13 @@ Namespace Q205054.nwindDataSetTableAdapters
 			Me._adapter.TableMappings.Add(tableMapping)
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Private Sub InitConnection()
 			Me._connection = New Global.System.Data.OleDb.OleDbConnection()
 			Me._connection.ConnectionString = My.Settings.Default.nwindConnectionString
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
 		Private Sub InitCommandCollection()
 			Me._commandCollection = New Global.System.Data.OleDb.OleDbCommand(0){}
 			Me._commandCollection(0) = New Global.System.Data.OleDb.OleDbCommand()
@@ -763,7 +773,9 @@ Namespace Q205054.nwindDataSetTableAdapters
 			Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
 		End Sub
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>
+		<Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)>
 		Public Overridable Function Fill(ByVal dataTable As nwindDataSet.ProductReportsDataTable) As Integer
 			Me.Adapter.SelectCommand = Me.CommandCollection(0)
 			If (Me.ClearBeforeFill = True) Then
@@ -773,7 +785,9 @@ Namespace Q205054.nwindDataSetTableAdapters
 			Return returnValue
 		End Function
 
-		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Select, True)> _
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>
+		<Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Select, True)>
 		Public Overridable Function GetData() As nwindDataSet.ProductReportsDataTable
 			Me.Adapter.SelectCommand = Me.CommandCollection(0)
 			Dim dataTable As New nwindDataSet.ProductReportsDataTable()
@@ -783,5 +797,4 @@ Namespace Q205054.nwindDataSetTableAdapters
 	End Class
 End Namespace
 
-'INSTANT VB TODO TASK: There is no equivalent to #pragma directives in VB.NET:
-'#pragma warning restore 1591
+#Enable Warning BC1591

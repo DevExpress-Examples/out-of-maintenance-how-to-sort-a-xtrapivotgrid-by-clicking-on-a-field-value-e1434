@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Data
@@ -11,11 +10,12 @@ Imports DevExpress.XtraPivotGrid
 Namespace Q205054
 	Partial Public Class Form1
 		Inherits Form
+
 		Public Sub New()
 			InitializeComponent()
 		End Sub
 
-		Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+		Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
 			' TODO: This line of code loads data into the 'nwindDataSet.ProductReports' table. You can move, or remove it, as needed.
 			Me.productReportsTableAdapter.Fill(Me.nwindDataSet.ProductReports)
 
@@ -44,7 +44,7 @@ Namespace Q205054
 				For j As Integer = 0 To higherFields.Length - 1
 					otherFields(i).SortBySummaryInfo.Conditions.Add(New PivotGridFieldSortCondition(higherFields(j), higherValues(j)))
 				Next j
-				If e.Field IsNot Nothing Then
+				If e.Field IsNot Nothing AndAlso e.Field.Area <> PivotArea.DataArea Then
 					otherFields(i).SortBySummaryInfo.Conditions.Add(New PivotGridFieldSortCondition(e.Field, e.Value))
 				End If
 			Next i
@@ -52,11 +52,7 @@ Namespace Q205054
 		End Sub
 
 		Private Function GetOtherArea(ByVal e As PivotFieldValueEventArgs) As PivotArea
-			If e.IsColumn Then
-				Return PivotArea.RowArea
-			Else
-				Return PivotArea.ColumnArea
-			End If
+			Return If(e.IsColumn, PivotArea.RowArea, PivotArea.ColumnArea)
 		End Function
 	End Class
 End Namespace
