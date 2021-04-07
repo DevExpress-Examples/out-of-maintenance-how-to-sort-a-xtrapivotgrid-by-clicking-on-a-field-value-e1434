@@ -27,7 +27,7 @@
 			Me.pivotGridControl1 = New DevExpress.XtraPivotGrid.PivotGridControl()
 			Me.nwindDataSet = New Q205054.nwindDataSet()
 			Me.productReportsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-			Me.productReportsTableAdapter = New Q205054.nwindDataSetTableAdapters.ProductReportsTableAdapter()
+            Me.productReportsTableAdapter = New nwindDataSetTableAdapters.ProductReportsTableAdapter()
 			Me.fieldCategoryName = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.fieldProductName = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.fieldProductSales = New DevExpress.XtraPivotGrid.PivotGridField()
