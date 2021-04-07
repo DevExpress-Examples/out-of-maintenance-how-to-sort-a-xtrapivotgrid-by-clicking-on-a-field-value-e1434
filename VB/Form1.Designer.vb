@@ -120,7 +120,7 @@
 		Private WithEvents pivotGridControl1 As DevExpress.XtraPivotGrid.PivotGridControl
 		Private nwindDataSet As nwindDataSet
 		Private productReportsBindingSource As System.Windows.Forms.BindingSource
-		Private productReportsTableAdapter As Q205054.nwindDataSetTableAdapters.ProductReportsTableAdapter
+		Private productReportsTableAdapter As nwindDataSetTableAdapters.ProductReportsTableAdapter
 		Private fieldCategoryName As DevExpress.XtraPivotGrid.PivotGridField
 		Private fieldProductName As DevExpress.XtraPivotGrid.PivotGridField
 		Private fieldProductSales As DevExpress.XtraPivotGrid.PivotGridField
